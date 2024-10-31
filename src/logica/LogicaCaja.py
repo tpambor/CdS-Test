@@ -441,7 +441,7 @@ class LogicaCaja(FachadaCajaDeSeguridad):
             return "El titular no debe tener menos de 3 caracteres"
         if len(titular) > 255:
             return "El titular no debe tener más de 255 caracteres"
-        if not re.match("^[A-ZÑÉÓÚÍÜ ]+$", titular):
+        if not re.match("^[A-ZÑÁÉÓÚÍÜ ]+$", titular):
             return "El titular debe contener solo mayúsculas y espacios"
         if len(notas) < 3:
             return "Las notas no deben tener menos de 3 caracteres"
